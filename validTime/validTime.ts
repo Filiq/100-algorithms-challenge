@@ -1,7 +1,7 @@
 function validTime(time: string): boolean {
-    time = time.split(":");
+    const [hours, minutes] = time.split(":");
 
-    return parseInt(time[0]) < 25 && parseInt(time[1]) < 60;
+    return parseInt(hours) < 25 && parseInt(minutes) < 60;
 }
 
 console.log(validTime('13:58'));
