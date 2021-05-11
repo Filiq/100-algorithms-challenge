@@ -1,13 +1,13 @@
 function reflectString(inputString: string): string {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
   const reversedAlphabet = "zyxwvutsrqponmlkjihgfedcba";
-  let reflectStr = "";  
+  let reflectedStr = "";  
 
   for(let i = 0; i < inputString.length; i++){
-    reflectStr += reversedAlphabet[alphabet.indexOf(inputString[i])];
+    reflectedStr += reversedAlphabet[alphabet.indexOf(inputString[i])];
   }
 
-  return reflectStr;
+  return reflectedStr;
 }
 
 console.log(reflectString("name"));
